@@ -1,0 +1,45 @@
+<html lang="en-US">
+<head>
+    <title>Survey Analysis</title>
+</head>
+
+<body>
+    <h1>Survey analysis</h1>
+    <h2>First thing that stands out</h2>
+      <ul>
+      <% for (var i=0; i<results[0].length; i++){ %>
+          <li><%= results[0][i].firstThing %> :  <%= results[0][i].count %></li>
+      <% } %>
+      </ul>
+      <h2>Logged in users</h2>
+      <ul>
+      <% for (var i=0; i<results[1].length; i++){ %>
+          <li><%= results[1][i].login %> :  <%= results[1][i].count %></li>
+      <% } %>
+      </ul>
+    <h2>Frequency of use</h2>
+    <ul>
+    <% for (var i=0; i<results[2].length; i++){ %>
+        <li><%= results[2][i].freq %> :  <%= results[2][i].count %></li>
+    <% } %>
+    </ul>
+    <h2>Interests</h2>
+    <ul>
+    <% for (var i=0; i<results[3].length; i++){ %>
+        <li><%= results[3][i].interests %> :  <%= results[3][i].count %></li>
+    <% } %>
+    </ul>
+    <h2>This page represents their interests</h2>
+    <ul>
+    <% for (var i=0; i<results[4].length; i++){ %>
+        <li><%= results[4][i].represent %> :  <%= results[4][i].count %></li>
+    <% } %>
+    </ul>
+    <h2>Additional comments</h2>
+    <ul>
+    <% for (var i=0; i<results[5].length; i++){ %>
+        <li>"<%= results[5][i].comments %>"</li>
+    <% } %>
+    </ul>
+</body>
+</html>

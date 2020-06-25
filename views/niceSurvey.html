@@ -1,0 +1,66 @@
+<html>
+  <head>
+    <title>Questionnaire</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Style sheet (CSS) and JavaScript scripts necessary to use Bootstrap -->
+    <!-- Style sheet (CSS) and JavaScript scripts necessary to use Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+    <!-- Your own additional style sheet -->
+    <link href="./style.css" rel="stylesheet" type="text/css">
+    <!-- <script src="https://code.jquery.com/jquery-1.12.4.js"></script> -->
+  </head>
+
+  <body>
+  <link href="style.css" rel="stylesheet" type="text/css">
+	<div class="container-md p-3 my-3 border bg-success text-white" id="survey">
+    <h1>Survey</h1>
+    Please provide feedback for <a href="https://www.youtube.com/">this page</a>.<br>
+    <a href="https://www.youtube.com/">
+  			<img src="https://www.lifewire.com/thmb/lmF3q8OAxPxQD5j88IfpyzsQs40=/768x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/youtube-screenshot-677b911c8c3a4f82aa210d3a2b283437.jpg" alt="HTML tutorial" style="width:640px;height:360px;border:0;">
+		</a><br><br>
+    <form>
+      <h2>What is the first thing that stands out to you about this site?</h2>
+      <input type="text" name="firstThing" required><br><br>
+
+      <h2>Are you logged into an account?</h2>
+		<input type="radio" name="login" value="Logged in"> Yes<br>
+		<input type="radio" name="login" value="Logged out"> No<br><br>
+
+      <h2>How often do you use this site?</h2>
+		<select name= "freq">
+			<option value="Daily" selected="daily">Daily</option>
+			<option value="A few times daily">A few days a week</option>
+			<option value="Weekly">Weekly</option>
+			<option value="Less than weekly">Less than weekly</option>
+		</select><br><br>
+
+    <h2>Which of the following video topics interest you?</h2>
+    <input type="checkbox" name="interests" value="Music"> Music<br>
+    <input type="checkbox" name="interests" value="Gaming"> Gaming<br>
+    <input type="checkbox" name="interests" value="News"> News<br>
+    <input type="checkbox" name="interests" value="Movies"> Movies<br>
+    <input type="checkbox" name="interests" value="Fashion & Beauty"> Fasion & Beauty<br><br>
+
+    <h2>How strongly would you agree that this page represents your interests?</h2>
+		<input type="radio" name="represent" value="Very strongly agree"> Very strongly agree<br>
+		<input type="radio" name="represent" value="Strongly agree"> Strongly agree<br>
+		<input type="radio" name="represent" value="Somewhat agree"> Somewhat agree<br>
+    <input type="radio" name="represent" value="Somewhat disagree"> Somewhat disagree<br>
+		<input type="radio" name="represent" value="Strongly disagree"> Strongly disagree<br>
+    <input type="radio" name="represent" value="Very strongly disagree"> Very strongly disagree<br><br>
+
+    <h2>Please share any additional comments you have about this page:</h2>
+    <input type="text" name="comments" size="100"><br><br>
+
+      <button type="submit" class="btn btn-warning" id="bb">Submit</button>
+      <p id="thanks"></p>
+    </form>
+    </div>
+	<script src="/assets/action.js"></script>
+  </body>
+</html>

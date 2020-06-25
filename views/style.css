@@ -1,0 +1,20 @@
+/* Style sheet
+   color picker www.w3schools.com/colors/colors_picker.asp
+*/
+
+/* Bootstrap default font-family is Helvetica Neue */
+
+h1 {
+	font-family: "Arial Black", Times, serif;
+	text-shadow: 3px 3px 1px black;
+	color: #ffcc00;
+}
+h3{
+	font-family: "Arial Black", Times, serif;
+	color: #00b33c;
+}
+a{
+
+	outline: black;
+	color: yellow;
+}
